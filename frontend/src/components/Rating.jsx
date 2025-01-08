@@ -1,6 +1,3 @@
-
-import React from 'react'
-
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 const Rating = ({ value, text, color }) => {
   return (
@@ -54,5 +51,7 @@ const Rating = ({ value, text, color }) => {
     </div>
   );
 };
-
-export default Rating
+Rating.defaultProps = {
+  color: '#f8e825',
+};
+export default Rating;
