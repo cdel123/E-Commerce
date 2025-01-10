@@ -1,6 +1,8 @@
 import express from 'express';
 import products from './data/products.js';
+import connectDB from './config/db.js';
 const port = process.env.PORT || 5000;
+connectDB();
 const app = express();
 app.get('/api/products', (req, res) => {
   res.json(products);
