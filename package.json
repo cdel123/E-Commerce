@@ -16,6 +16,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@paypal/react-paypal-js": "^8.8.1",
     "bcryptjs": "^2.4.3",
     "color": "^4.2.3",
     "colors": "^1.4.0",
