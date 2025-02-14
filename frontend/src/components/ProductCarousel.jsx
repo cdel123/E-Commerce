@@ -5,9 +5,7 @@ import Message from './Message';
 import { useGetTopProductsQuery } from '../slices/productsApiSlice';
 const ProductCarousel = () => {
   const { data: products, isLoading, error } = useGetTopProductsQuery();
-  return isLoading ? (
-    <Loader />
-  ) : error ? (
+  return isLoading ? null : error ? (
     <Message variant='danger'>{error?.data?.message || error.error}</Message>
   ) : (
     <Carousel pause='hover' className='bg-primary mb-4'>
